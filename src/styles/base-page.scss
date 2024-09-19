@@ -1,0 +1,177 @@
+.page-card{
+  min-height: calc(100vh - 118px);
+  padding-bottom: 15px;
+  .el-card__body{
+    padding-bottom: 0 !important;
+  }
+  .el-input--suffix .el-input__inner {
+      padding-right: 0;
+  }
+  .section-line{
+    text-align: center;
+  }
+  .table-op{
+    padding: 10px;
+    background-color: #fafafa;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+}
+//弹框居中
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 15vh;
+}
+//弹框按钮居中
+.dialog-footer{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+//提示文本限制宽度
+.el-tooltip__popper{
+  max-width: 500px;
+}
+//分页居中
+.footerpage {
+  text-align: center;
+  margin-top: 20px;
+}
+// 弹框头下划线
+.el-dialog__header {
+  border-bottom: 1px solid #d8dce6;
+  padding: 20px;
+}
+//表单按钮靠右
+.form-item-r{
+  text-align: right;
+  margin-bottom: 10px;
+}
+//表格里面表单验证
+.form-table{
+  height: 56px;
+}
+
+//表单项下面的提示
+.input-cue {
+  font-size: 12px;
+  line-height: 12px;
+  color: #999999;
+}
+
+// 页头
+.el-page-header{
+  background-color: #F9FAFF;
+  padding: 10px;
+  color: #5488F9;
+}
+.el-page-header__content{
+  color: #5488F9;
+}
+.input-gray {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #999999;
+}
+.star-red{
+  color: #F56C6C;
+  margin-right: 4px;
+}
+.input-red {
+  font-size: 12px;
+  line-height: 12px;
+  color:#F56C6C;
+}
+
+.fox-box{
+  margin: 20px;
+}
+
+.el-card{
+  border: none !important;
+}
+
+
+.el-table__fixed-right::before, .el-table__fixed::before {
+  // background-color: #fff !important;
+  // opacity:0.2 !important;
+  // height:2px !important;
+}
+
+
+.atooltip.el-tooltip__popper[x-placement^="top"] .popper__arrow {
+  border-top-color: #fff;
+}
+.atooltip.el-tooltip__popper[x-placement^="top"] .popper__arrow:after {
+  border-top-color: #fff;
+}
+.atooltip {
+  background: #fff !important;
+  color: #000 !important;
+  box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.1)!important;
+}
+//table项操作...鼠標手势
+.operate-table-dropdown{
+  &:hover{
+    cursor:pointer
+  }
+}
+//操作栏文字描述
+.table-top-text{
+  font-size: 12px;
+  color: #606266;
+  margin-left: 15px;
+}
+//table操作按钮里面ico
+.table-top-btn-right-icon{
+  margin-left: 6px;
+  font-size: 11px;
+}
+//除去表单lable加粗
+.el-form-item__label{
+  font-weight: normal;
+  padding: 0 !important;
+}
+//表格和顶部操作栏中間显示數據集合的区域
+.table-item-top{
+  background: #fafafa;
+  border-bottom: 1px solid #ededed;
+  padding: 10px;
+}
+
+.fw-inherit{
+  font-weight: inherit;
+}
+
+.popover-content{
+  max-width: 400px;
+}
+
+.el-collapse{
+  border-top: none !important;
+}
+
+.el-dropdown-link{
+  display: inline-block;
+  padding: 10px 10px 0;
+  cursor:pointer;
+}
+
+.table-omit{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.FormItem_slot_label_select{
+  .el-input{
+    input{
+      padding-left: 0;
+      border: none; 
+    }
+  }
+}
