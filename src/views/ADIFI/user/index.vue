@@ -13,7 +13,9 @@
           :header-cell-style="{ 'text-align': 'center','background':'#fafafa' }"
           :cell-style="{ 'text-align': 'center' }"
         >
-          <template #btnContentLeft />
+          <template #btnContentLeft>
+            <el-button v-setButtonPower="'adifi-user-calibration'" type="primary" size="mini" @click="handleClick('calibration')">校準記錄</el-button>
+          </template>
           <template #btnContentRight>
             <el-tooltip class="item table-top-btn" effect="dark" content="刷新列表" placement="top">
               <el-button size="mini" circle icon="el-icon-refresh-right" @click="getData" />
@@ -92,7 +94,7 @@
         </div>
       </div>
     </el-card>
-
+    <Calibration ref="Calibration" />
   </div>
 </template>
 
@@ -102,10 +104,11 @@ import TablePackage from '@/components/TablePackage'
 import SearchForm from '@/components/SearchForm'
 import { elMessage } from '@/utils/message-remind.js'
 import { pageMixins } from '@/mixins/page'
+import Calibration from './components/calibration'
 import { userEnums, userList, userStatus, userParent, userChangeLevel } from '@/api/adifi'
 export default {
   name: 'ADIFIUser', // 用戶列表
-  components: { TablePackage, SearchForm },
+  components: { TablePackage, SearchForm, Calibration },
   mixins: [pageMixins],
   data() {
     return {
@@ -271,6 +274,8 @@ export default {
     handleClick(type, data) {
       if (type === 'pid') {
         this.setPid(data)
+      } else if (type === 'calibration') {
+        this.setCalibration()
       }
     },
     setPid(params) {
@@ -285,6 +290,9 @@ export default {
         elMessage(this, '操作成功！', 'success')
         this.getData()
       }).catch(() => {})
+    },
+    setCalibration() {
+      this.$refs.Calibration.dialogFormVisible = true
     }
   }
 }

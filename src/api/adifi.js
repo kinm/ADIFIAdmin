@@ -289,3 +289,12 @@ export function adifiKongSettleList(params) {
     params
   })
 }
+
+// 用户列表-校准记录
+export function manualFetchEvents(data) {
+  return request({
+    url: 'adifi-user/manual-fetch-events',
+    method: 'post',
+    data
+  })
+}
