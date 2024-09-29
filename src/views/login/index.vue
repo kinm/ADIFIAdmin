@@ -1,7 +1,7 @@
 <template>
   <div class="login-container">
     <div class="left">
-      V2.0.0_2024/07/25
+      V2.0.1_2024/09/29
     </div>
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
       <div class="title-container">
