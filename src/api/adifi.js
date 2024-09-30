@@ -298,3 +298,20 @@ export function manualFetchEvents(data) {
     data
   })
 }
+
+// 官网链接获取
+export function settingGetOffUrl(params) {
+  return request({
+    url: 'setting/get-off-url',
+    params
+  })
+}
+
+// 官网链接设置
+export function settingSetOffUrl(data) {
+  return request({
+    url: 'setting/set-off-url',
+    method: 'post',
+    data
+  })
+}

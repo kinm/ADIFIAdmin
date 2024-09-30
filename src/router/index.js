@@ -278,6 +278,12 @@ export const otherRoutes = [
         name: 'ADIFIMedia',
         component: () => import('@/views/ADIFI/media'),
         meta: { title: '媒體設置' }
+      },
+      {
+        path: 'web',
+        name: 'ADIFIWeb',
+        component: () => import('@/views/ADIFI/web'),
+        meta: { title: '官網設置' }
       }
     ]
   },
