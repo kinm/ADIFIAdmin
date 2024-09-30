@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row :gutter="20">
-      <el-col :span="12" :offset="6">
+      <el-col :span="10" :offset="7">
         <el-form ref="ruleForm" class="ruleForm" :model="ruleForm" :rules="rules" label-position="top">
           <el-form-item label="跳轉地址一" prop="url1">
             <svg-icon icon-class="footer_url_logo1" style="width:20px;height:20px;position: absolute;left: 10px;top: 10px;z-index: 9999;" alt="" class="svg-container" />
